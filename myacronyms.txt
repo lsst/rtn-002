@@ -8,3 +8,5 @@
 CET:Community Engagement Team
 MBSE:Model Based Systems Engineering
 RTN:Rubin Tech Note
+SP:System Performance
+VV:Verification and Validation
