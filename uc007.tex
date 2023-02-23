@@ -1,9 +1,9 @@
 {\bf Use Case:} 007 A Science-Driven Modification to a Data Product \\
 
 {\bf Characteristic Information} \\
-Trigger: A manuscript is published in the literature that highlights and issue with Rubin Observatory Data Release products. This paper is seen by a CET member, who passes it along to the Community Scientist and Science Collaboration with the relevant expertise. \\
-Goal in Context: While the Data Releases will be subject to verification and validation before release, it is inevitable that sub-optimal outcomes for certain science goals will be identified as a result of data processing decisions that were taken (or weren't even considered).  The CET and the DRP team need to implement processes to (1) assess the possible impacts of alterations to the code base that solve the issue, and (2) if possible, incorporate code changes that mitigate the emergent scientific issue while not compromising overal DRP results. \\
-Primary Actor: The CET member with primary expertise in transients. \\
+Trigger: A manuscript is published in the literature that highlights and issue with Rubin Observatory Data Release products. This paper is seen by a CST member, who passes it along to the Community Scientist and Science Collaboration with the relevant expertise. \\
+Goal in Context: While the Data Releases will be subject to verification and validation before release, it is inevitable that sub-optimal outcomes for certain science goals will be identified as a result of data processing decisions that were taken (or weren't even considered).  The CST and the DRP team need to implement processes to (1) assess the possible impacts of alterations to the code base that solve the issue, and (2) if possible, incorporate code changes that mitigate the emergent scientific issue while not compromising overal DRP results. \\
+Primary Actor: The CST member with primary expertise in transients. \\
 Scope: Data Release Production \\
 Level: \\
 Preconditions: A Data Release has occurred, with sufficient time passed for scientists to carry research projects through to publication. \\
@@ -12,15 +12,15 @@ Failed End Condition: A solution is either not identified, or is deemed deterime
 
 {\bf Main Success Scenario} \\
 1. A manuscript is published in the literature that highlights a systematic offset in the detection efficiency of nuclear transients in different types of host galazies with Rubin Observatory Data Release products. \\
-2. This paper is brought to the attention of a CET member, who creates an Issue Ticket assigned to the Community Scientist(s) and Science Collaboration(s) with the relevant expertise (in this case, predominantly time-domain science and the TVS SC). \\
+2. This paper is brought to the attention of a CST member, who creates an Issue Ticket assigned to the Community Scientist(s) and Science Collaboration(s) with the relevant expertise (in this case, predominantly time-domain science and the TVS SC). \\
 3. The Community Scientist and other relevant parties investigate the issue and identify a possible cause in the DM pipelines. \\
 4. The ticket is discussed with DM developers, who identify possible improvements to mitigate the issue, and consider the possible side effects of implementing those changes. \\
-5. DM developers implement the code changes on a ticket branch, and the relevant CET and/or TVS-SC verify that the new algorithm decreases (or removes) the systematic offsets with host galaxy type from the delivered detection efficiencies, while not adversely affecting other pipeline outputs. \\
+5. DM developers implement the code changes on a ticket branch, and the relevant CST and/or TVS-SC verify that the new algorithm decreases (or removes) the systematic offsets with host galaxy type from the delivered detection efficiencies, while not adversely affecting other pipeline outputs. \\
 6. The changes are merged to the science pipelines, and one of the relevant parties defines a metric that can be monitored each time a new version of the Science Pipelines and DRP is released. \\
-7.  The CET member details the mitigation and demonstrates its outcome in a public-facing document (e.g., a DM Tech Note or similar), and the issue is closed. \\
+7.  The CST member details the mitigation and demonstrates its outcome in a public-facing document (e.g., a DM Tech Note or similar), and the issue is closed. \\
 
 {\bf Extensions} \\
-Altered Step 5.1: Relevant CET and/or TVS-SC members test the new algorithm to assess whether it improves the formerly low detection efficiencies in certain types of host galaxies.  During this verification, it is discovered that the changes that were made (e.g., lowering detection thresholds near resolved galaxies) adversely affected other scientific data products. \\
+Altered Step 5.1: Relevant CST and/or TVS-SC members test the new algorithm to assess whether it improves the formerly low detection efficiencies in certain types of host galaxies.  During this verification, it is discovered that the changes that were made (e.g., lowering detection thresholds near resolved galaxies) adversely affected other scientific data products. \\
 Altered Step 5.2: It is decided that it is not acceptable to sacrifice data quality of other pipeline products to solve this issue with galactic transients.  As an alternative, a method is devised that does not require new or altered measurements, but instead uses existing measurements such as offset from the nearest galaxy, color, morphology, etc. to derive a classification scheme that more accurately captures the subtlety of identifying transients in galaxy nuclei. \\
 
 {\bf Sub-Variations} \\
@@ -32,7 +32,7 @@ Performance Target: 1-3 months \\
 Frequency: 4-8 times per year (most likely all clustered in a period shortly after data releases) \\
 Superordinate Use Case:  \\
 Subordinate Use Cases: \\
-Channel to primary actor: Personal communication (email, Slack, or during regular meetings) to CET or individual Community Scientist \\
+Channel to primary actor: Personal communication (email, Slack, or during regular meetings) to CST or individual Community Scientist \\
 Secondary Actors: Data Management developer(s), interested Science Collaboration members \\
 Channel to Secondary Actors: Email or Slack (perhaps first passing through the DM-SST?) \\
 
