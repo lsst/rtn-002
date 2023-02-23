@@ -3,14 +3,14 @@
 .. image:: https://github.com/rubin-observatory/rtn-002/workflows/CI/badge.svg
    :target: https://github.com/rubin-observatory/rtn-002/actions/
 
-##############################
-Community Engagement Use Cases
-##############################
+###########################
+Community Science Use Cases
+###########################
 
 RTN-002
 =======
 
-The Community Engagement Team (CET) in the Rubin System Performance department is generating a suite of use-cases to capture the full range of anticipated interactions regarding community support for Rubin software and data products.
+The Community Science Team (CST) in the Rubin System Performance department is generating a suite of use-cases to capture the full range of anticipated interactions regarding community support for Rubin software and data products.
 
 Links
 =====
