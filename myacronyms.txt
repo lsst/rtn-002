@@ -7,6 +7,5 @@
 #   MIA:Missing In Action
 CST:Community Science Team
 MBSE:Model Based Systems Engineering
-RTN:Rubin Tech Note
 SP:System Performance
 VV:Verification and Validation
