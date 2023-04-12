@@ -5,7 +5,7 @@
 #
 # Example:
 #   MIA:Missing In Action
-CET:Community Engagement Team
+CST:Community Science Team
 MBSE:Model Based Systems Engineering
 RTN:Rubin Tech Note
 SP:System Performance
