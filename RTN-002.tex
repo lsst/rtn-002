@@ -21,7 +21,7 @@
 % \setDocSubtitle{A subtitle}
 
 \author{%
-Melissa Graham, Christina Adair, Jim Annis, Jeff Carlin, Alex Drlica-Wagner, Leanne Guy, Greg Madejski, Robert DePeyster
+Melissa Graham, Christina Adair, Jim Annis, Jeff Carlin, Alex Drlica-Wagner, Leanne Guy, Greg Madejski, Andrés A. Plazas Malagón, Robert DePeyster
 }
 
 \setDocRef{RTN-002}
@@ -33,7 +33,7 @@ Melissa Graham, Christina Adair, Jim Annis, Jeff Carlin, Alex Drlica-Wagner, Lea
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-The Community Science Team (CST) in the Rubin System Performance department is generating a suite of use-cases to capture the full range of anticipated interactions regarding community support for Rubin software and data products.
+Draft user profiles and use cases by the Community Science Team (CST).
 }
 
 % Change history defined here.
@@ -41,7 +41,8 @@ The Community Science Team (CST) in the Rubin System Performance department is g
 % Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
 % See LPM-51 for version number policy.
 \setDocChangeRecord{%
-  \addtohist{1}{YYYY-MM-DD}{Unreleased.}{Melissa Graham}
+  \addtohist{1}{2021-03-05}{Released.}{Melissa Graham}
+  \addtohist{2}{2023-04-19}{Add user profiles.}{Andrés A. Plazas Malagón}
 }
 
 \begin{document}
@@ -56,14 +57,59 @@ The Community Science Team (CST) in the Rubin System Performance department is g
 
 \section{Introduction}
 
-In this document we gather use-cases for community engagement between the Rubin Observatory and its science users, and model them in a format defined by model-based systems engineering (MBSE) practices.
+This document is a work in progress.
+
+The Community Science Team (CST) in the Rubin System Performance department is generating a set of user profiles and use cases
+to capture the range of anticipated needs regarding community support for Rubin software and data products.
+These user profiles and use cases are being used to guide the developement of science validation processes for
+user-facing resources such as the Rubin Science Platform, documentation, tutorials, and activities.
+They are also being used to refine the Model for Community Science \citedsp{RTN-004}.
+
+\textbf{User profiles} are designed to represent the diverse user community of the RSP:
+different experience and expertise backgrounds, scientific motivations, and accessibility needs.
+Four user profiles for each of the Notebook, Portal, and API aspects of the RSP have been drafted along
+the axes of user experience and science motivation.
+Two additional user profiles have been drafted: one to represent integrated use of the Notebook and Portal aspects,
+and one to represent accessibility needs.
+
+These fourteen user profiles are subject to change.
+
+\textbf{Use cases} for the support of scientists using the Rubin software and data products have been drafted
+in a format defined by model-based systems engineering (MBSE) practices.
+The seven use cases represent issues and support needs that involve, e.g., trouble with scientific analysis,
+instrumentation faults, software bugs.
+
+These seven use cases are subject to change.
 
 \clearpage
-\subsection{Template}
-\input{uc000.tex}
+\section{User Profiles for Science Validation of the Rubin Science Platform}
+
+\clearpage
+\subsection{Portal Aspect}
+\input{up_portal.tex}
+
+\clearpage
+\subsection{Notebook Aspect}
+\input{up_notebook.tex}
+
+\clearpage
+\subsection{Web Application Programming Interface (API) Aspect}
+\input{up_web_api.tex}
+
+\clearpage
+\subsection{Integrated Aspects}
+\input{up_integrated_aspects.tex}
+
+\clearpage
+\subsection{Accessibility}
+\input{up_accesibility.tex}
 
 \clearpage
 \section{Use Cases}
+
+\clearpage
+\subsection{Use Cases Template}
+\input{uc000.tex}
 
 \clearpage
 \subsection{Generic Community Self-Help Using CST Resources}
