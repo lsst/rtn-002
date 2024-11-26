@@ -21,7 +21,7 @@
 % \setDocSubtitle{A subtitle}
 
 \author{%
-Melissa Graham, Christina Adair, Jim Annis, Jeff Carlin, Alex Drlica-Wagner, Leanne Guy, Greg Madejski, Andrés A. Plazas Malagón, Robert DePeyster
+Melissa Graham, Andrés A. Plazas Malagón, Jeff Carlin, Leanne Guy, Christina Adair, Greg Madejski
 }
 
 \setDocRef{RTN-002}
@@ -33,7 +33,7 @@ Melissa Graham, Christina Adair, Jim Annis, Jeff Carlin, Alex Drlica-Wagner, Lea
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-Draft user profiles and use cases by the Community Science Team (CST).
+User profiles and analysis and support use cases (workflows) for Rubin community science.
 }
 
 % Change history defined here.
@@ -43,6 +43,7 @@ Draft user profiles and use cases by the Community Science Team (CST).
 \setDocChangeRecord{%
   \addtohist{1}{2021-03-05}{Released.}{Melissa Graham}
   \addtohist{2}{2023-04-19}{Add user profiles.}{Andrés A. Plazas Malagón}
+  \addtohist{3}{2024-12-01}{Reorganize document (SP-1758).}{Melissa Graham}
 }
 
 \begin{document}
@@ -57,55 +58,57 @@ Draft user profiles and use cases by the Community Science Team (CST).
 
 \section{Introduction}
 
-This document is a work in progress.
+The contents of this document are under development and are subject to change.
 
-The Community Science Team (CST) in the Rubin System Performance department is generating a set of user profiles and use cases
-to capture the range of anticipated needs regarding community support for Rubin software and data products.
-These user profiles and use cases are being used to guide the developement of science validation processes for
-user-facing resources such as the Rubin Science Platform, documentation, tutorials, and activities.
-They are also being used to refine the Model for Community Science \citedsp{RTN-004}.
+The Community Science Team (CST) in the Rubin System Performance department maintains this set of user profiles and use cases
+to capture the range of anticipated needs regarding scientific analyses with the Rubin software and data products.
+
+This document guides the developement of a process to scientifically validate user-facing resources for scientific analysis,
+such as the Rubin Science Platform, documentation, tutorials, and activities.
+It also guides the development of Rubin's Model for Community Science \citedsp{RTN-004}.
 
 \textbf{User profiles} are designed to represent the diverse user community of the RSP:
 different experience and expertise backgrounds, scientific motivations, and accessibility needs.
-Four user profiles for each of the Notebook, Portal, and API aspects of the RSP have been drafted along
-the axes of user experience and science motivation.
-Two additional user profiles have been drafted: one to represent integrated use of the Notebook and Portal aspects,
-and one to represent accessibility needs.
 
-These fourteen user profiles are subject to change.
+\textbf{Analysis use cases} are designed to represent the variety of types of analysis that
+users will do with the RSP, such as subsetting, visualization, model fitting, and reprocessing.
+These use cases help to define the limitations of the RSP as well, and identify analysis
+that requires external resources (independent data access centers; IDACs).
 
-\textbf{Use cases} for the support of scientists using the Rubin software and data products have been drafted
-in a format defined by model-based systems engineering (MBSE) practices.
-The seven use cases represent issues and support needs that involve, e.g., trouble with scientific analysis,
+\textbf{Support use cases} are designed to provide workflow examples of Rubin's issue resolution
+process, to illuminate how users report problems and get support, and how staff from across
+Rubin participate in user support.
+These uses cases include, e.g., trouble with scientific analysis,
 instrumentation faults, software bugs.
 
-These seven use cases are subject to change.
-
 \clearpage
-\section{User Profiles for Science Validation of the Rubin Science Platform}
+\section{User Profiles}
 
-\clearpage
 \subsection{Portal Aspect}
 \input{up_portal.tex}
 
-\clearpage
 \subsection{Notebook Aspect}
 \input{up_notebook.tex}
 
-\clearpage
 \subsection{Web Application Programming Interface (API) Aspect}
 \input{up_web_api.tex}
 
-\clearpage
 \subsection{Integrated Aspects}
 \input{up_integrated_aspects.tex}
 
-\clearpage
 \subsection{Accessibility}
 \input{up_accesibility.tex}
 
+
+
 \clearpage
-\section{Use Cases}
+\section{Analysis Use Cases}
+
+
+
+
+\clearpage
+\section{Support Use Cases}
 
 \clearpage
 \subsection{Use Cases Template}
@@ -138,6 +141,8 @@ These seven use cases are subject to change.
 \clearpage
 \subsection{A Science-Driven Modification to a Data Product}
 \input{uc007.tex}
+
+
 
 \appendix
 % Include all the relevant bib files.
