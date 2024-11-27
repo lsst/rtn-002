@@ -65,7 +65,9 @@ to capture the range of anticipated needs regarding scientific analyses with the
 
 This document guides the developement of a process to scientifically validate user-facing resources for scientific analysis,
 such as the Rubin Science Platform, documentation, tutorials, and activities.
-It also guides the development of Rubin's Model for Community Science \citedsp{RTN-004}.
+To "scientifically validate" the RSP means to confirm that the RSP's functionality meets the scientific needs
+of its users, and that users are able to do their science with the RSP's tools.
+This document also guides the development of Rubin's Model for Community Science \citedsp{RTN-004}.
 
 \textbf{User profiles} are designed to represent the diverse user community of the RSP:
 different experience and expertise backgrounds, scientific motivations, and accessibility needs.
@@ -84,25 +86,26 @@ instrumentation faults, software bugs.
 \clearpage
 \section{User Profiles}
 
-\subsection{Portal Aspect}
-\input{up_portal.tex}
-
-\subsection{Notebook Aspect}
-\input{up_notebook.tex}
-
-\subsection{Web Application Programming Interface (API) Aspect}
-\input{up_web_api.tex}
-
-\subsection{Integrated Aspects}
-\input{up_integrated_aspects.tex}
-
-\subsection{Accessibility}
-\input{up_accesibility.tex}
-
+\input{user_profiles.tex}
 
 
 \clearpage
 \section{Analysis Use Cases}
+
+These analysis use cases represent general things that users want to do in the Rubin Science Platform,
+using specific scientific examples.
+They are not 1:1 related to the user profiles above, although some of the more advanced analysis
+use cases, for example, would be much more likely to be done by a heavy user.
+
+The analysis use cases progress from "simple" to "more complicated".
+These will serve as the basis for usability tests and the CST's process for science validation of
+the RSP.
+
+\subsection{Rubin Science Platform}
+
+\input{analysis_rsp.tex}
+
+\subsection{Independent Data Access Centers (IDACs)}
 
 
 
@@ -111,15 +114,12 @@ instrumentation faults, software bugs.
 \section{Support Use Cases}
 
 \clearpage
-\subsection{Use Cases Template}
 \input{uc000.tex}
 
 \clearpage
-\subsection{Generic Community Self-Help Using CST Resources}
 \input{uc001.tex}
 
 \clearpage
-\subsection{Generic Sequence of Events from a CST Perspective}
 \input{uc002.tex}
 
 \clearpage
