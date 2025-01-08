@@ -3,44 +3,36 @@
 
 \textbf{P-101}: User interface cone search on the object catalog, review the results overplotted on the HIPS map.
 
-\textbf{P-102}: ADQL cone search on the object catalog with magnitude constraints, create a color-magnitude diagram in the results view.
+\textbf{P-102}: Astronomical Data Query Language (ADQL) cone search on the object catalog with magnitude constraints, create a color-magnitude diagram in the results view.
 
+\textbf{P-103}: Create exploratory color plots of different trans-Neptunian object (TNO) populations and perform statistical analyses to determine potential correlations. 
 
-\textbf{BELOW ARE THE ORIGINAL USER PROFILES which have lots of good analysis use-cases to incorporate here.}
+\textbf{P-201}: Perform an LSST light curve classification (e.g., stars vs quasars vs AGNs) using Portal tools, leveraging visualization features to distinguish populations.
 
-\textbf{P1:} A user with little experience using portal-like websites who wants to make exploratory color plots of different TNO populations and perform statistical analyses on them to determine potential correlations. 
+\textbf{P-301}: Query annual data releases and deepCoadds for overlaps with other datasets, and generate publication-quality plots of data and images.
 
-\textbf{P2}: An experienced user (previous experience with e.g., MAST or IRSA) who will use the portal  LSST Light curve classification (stars vs quasars vs AGNs or other objects). 
-
-\textbf{P3}: A static science user with little portal experience looking for overlaps with other data sets by querying on annual data releases and deepCoadds. They want to produce publication-quality plots of data and images. 
-
-\textbf{P4}: An experienced static science user that wants to determine queries for survey property maps and cross-correlate them with shape and photo-z catalogs for cosmic shear investigations. 
+\textbf{P-302}: Query survey property maps and cross-correlate them with shape and photo-z catalogs to investigate cosmic shear. Perform advanced filtering to optimize query performance.
 
 \subsubsection{Notebook}
 
-\textbf{N1}: A time domain user with little experience in python and Jupyter Notebooks/Jupyter Lab, who is interested in light curves and periodograms of selected targets. 
+\textbf{N-101}:  Analyze light curves and create periodograms for selected targets, starting with provided templates and basic functionality.
 
-\textbf{N2}:   A time domain user experienced with programming experience, including python and Jupyter Notebooks, who is interested in detection and characterization of microlensing events across the sky.
+\textbf{N-201}: Perform Point Spread Function (PSF) null tests for weak lensing analyses, querying PSF moments to compute residuals in sizes and shapes, and plotting them as a function of magnitude to examine systematic effects (e.g., the brighter-fatter effect).
 
-\textbf{N3}:   A static science user with little Jupyter experience wants to Perform Point Spread Function (PSF) null tests for weak lensing analyses: for example, they wish to query residual PSF sizes and plot them as function of magnitude to look for residuals of the brighter-fatter effect (e.g., Jarvis et al 2017).
+\textbf{N-202}: Detect and characterize microlensing events across the sky, using advanced algorithms and external packages for computational support.
 
-\textbf{N4}:  An experienced static science user interested in running different cluster-finding algorithms and assessing their performances under different metrics. Might need the use of batch resources. 
+\textbf{N-301}: Run and compare different cluster-finding algorithms, assessing their performance using custom-defined metrics. Utilize batch processing resources for computationally intensive tasks.
 
 \subsubsection{API}
 
-\textbf{A1}: A time domain user with no previous experience with Astronomical Data Query Language (ADQL) queries who is interested in exploring what catalogs exist and which columns they contain for Rubin catalogs and catalogs from other surveys. They are interested in performing basic cross matching for low-redshift Type Ia supernovae studies. 
+\textbf{A-101}: Explore Rubin catalogs and metadata using basic API queries, and cross-match catalogs from Rubin and other surveys to study low-redshift Type Ia supernovae.
 
-\textbf{A2}: An experienced time domain user interested in discovery and characterization of variable strong lenses for potential follow up. They also want to monitor the list of existing strong lensing systems (cross matching with other lists). Eventually, the user will be interested in measuring time delays of multiply imaged transients and quasars. 
+\textbf{A-102}: Monitor known strong lensing systems and discover new ones by performing API-based queries to measure time delays of multiply-imaged transients and quasars.
 
-\textbf{A3}: A static science user with little experience with the Web API aspect wants to check that measurements of cosmological observables from the various dark energy probes agree within expected uncertainties to check data consistency. 
+\textbf{A-201}: Verify the consistency of cosmological observables across dark energy probes by querying Rubin Web API data and performing basic statistical consistency checks.
 
-\textbf{A4}: An experienced static science user who wants to query shape and photo-z catalogs, measure two point correlation functions with an external package (\emph{e.g.}, 11Treecorr”) to produce a data vector. Then perform modeling and parameter sampling. This might need access to extra resources (batch processing).
+\textbf{A-301}: Query galaxy shapes, positions, and photo-z catalogs to measure two-point correlation functions with external packages (\emph{e.g.}, Treecorr). Use the results for modeling and parameter sampling with access to batch resources.
 
 \subsubsection{Multi-aspect}
 
-\textbf{M1}: A researcher who wants to first create exploratory plots and diagrams in the Portal, then perform computationally intensive calculations and catalog analyses in the Notebook Aspect. 
-
-
-
-
-
+\textbf{M-201}: Create exploratory plots and diagrams in the Portal to identify trends or interesting subsets, then use the Notebook Aspect for computationally intensive analyses and catalog queries.
