@@ -17,21 +17,24 @@
 
 \subsubsection{Notebook}
 
-\textbf{N-101}: Analyze light curves and create periodograms for selected targets. 
+\textbf{N-100}: Explore and analyze images by loading a specific observation using the LSST data butler. Use basic visualization tools, such as color mapping and zoom functions, to examine image details. Identify and measure properties of individual sources (e.g., stars or galaxies) within the image to enable further analysis or classification.
 
-\textbf{N-201}: Query Point Spread Function (PSF) surface brightness moments to compute residuals in sizes and shapes, enabling, for example, null tests for systematic errors in weak lensing analyses 
+\textbf{N101}: Develop and utilize custom algorithms to detect and characterize specific astronomical objects, such as supernovae or quasars.
 
-\textbf{N-202}: Detect and characterize microlensing events across the sky, using advanced algorithms and external packages for computational support.
+\textbf{N-102}: Reprocess data using the LSST Science Pipelines with modified configuration parameters to suit specific research needs.
 
-\textbf{N-203}: Assess the impact of megaconstellations on Solar System science by identifying compromised observations of Solar System objects due to satellite streaks.
-Develop statistical models and optimize survey strategies based on these constraints.
+\textbf{N-103}: Utilize advanced plotting libraries like Matplotlib and Bokeh to create publication-quality figures.
 
-\textbf{N-301}: Run and compare different cluster-finding algorithms, assessing their performance using custom-defined metrics. Utilize batch processing resources for computationally intensive tasks.
+\textbf{N-201}: Query the LSST databases (e.g., Prompt Producst Database) to generate cutout images (on the order of tens of thousands) for target candidates of specific astronomical objects of interest (e.g., lensed AGNs).
 
-\textbf{N-302}: Characterize the orbital dynamics of solar system small bodies using LSST catalogs and Minor Planet Center data.
-Refine orbits, provide orbital characterizations, and develop scalable computational tools for efficient analysis.
+\textbf{N-202}: Implement and apply algorithms to detect and characterize transient or variable phenomena, integrating external packages for computational support when needed (e.g., to identify microlensing events).
 
-\textbf{N-303}: Query survey property maps and cross-correlate them with shape and photo-z catalogs to investigate cosmic shear. Perform advanced filtering to optimize query performance.
+\textbf{N-203}: Identify and analyze patterns of data quality degradation or observational interference, such as satellite streaks, and develop models to assess their science impact (e.g., on Solar System science) and optimize observational strategies.
+
+\textbf{N-301}: Fit light curves for selected objects by applying an initial pre-selection function to filter candidates based on user-defined criteria, such as object features or custom metrics.
+Pass the light curves of the selected objects to a fitting function to obtain best-fit parameters for each object for e.g.,  detailed modeling of variable or transient events. 
+
+\textbf{N-302}: Run and compare different object-finding algorithms (e.g., galaxy clusters), assessing their performance using custom-defined metrics. Utilize batch processing resources for computationally intensive tasks.
 
 \subsubsection{API}
 
