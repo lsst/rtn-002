@@ -1,39 +1,39 @@
-\textbf{Use Case:} 005 Science Platform Bug: A Help Desk Submission \\
+\subsection{S-005: Science Platform Issue - A Help Desk Submission}
 
-\textbf{Characteristic Information} \\
-\textbf{Trigger:} Help desk submission \\
-\textbf{Goal in Context:} Address a bug in the Rubin Science Platform (RSP). \\
-\textbf{Primary Actor:} CST member \\
-\textbf{Scope:} The science platform \\
-\textbf{Level:} \\
-\textbf{Preconditions:} The RSP is operational and has active users. A ticketing system is functioning, and the ticket has been submitted. \\
-\textbf{Success End Condition:} The ticket is resolved by either: (1) solving a user issue that is not actually a bug, or (2) identifying the bug and providing information to the RSP development team. While the ultimate success end condition is the correction of the bug, for the CST team, providing a short-term workaround is more immediately relevant. \\
-\textbf{Failed End Condition:} The bug cannot be reproduced, and no workaround is available. \\
+\textbf{Issue origin and description} \\
+A user submits a Help Desk ticket regarding an issue they encountered in the Rubin Science Platform (RSP).
+The CST is responsible for determining whether the issue is a user error or an actual bug and taking appropriate steps to resolve it.
 
-\textbf{Main Success Scenario} \\
-Step 1: CST confirms that the bug is reproducible. \\
-Step 2: CST communicates the bug to RSP developers. \\
-Step 3: CST provides a workaround to the user. \\
-Step 4: RSP developers fix the bug. \\
-Step 5: A new RSP version is rolled out. \\
+\textbf{Success scenario(s)} \\
+The ticket is resolved by either: (1) solving a user issue that is not actually a bug, or (2) identifying the bug and providing detailed information to the RSP development team.
+While the ultimate goal is fixing the bug, providing a short-term workaround for the user is a critical success factor for the CST.
 
-\textbf{Extensions} \\
-\\
+\textbf{Success workflow} \\
+Step 1. CST confirms that the reported bug is reproducible. \\
+Step 2. CST communicates the details of the bug to the RSP development team. \\
+Step 3. CST provides a short-term workaround to the user, if possible. \\
+Step 4. RSP developers investigate and fix the bug. \\
+Step 5. A new version of the RSP, incorporating the fix, is rolled out. \\
 
-\textbf{Sub-Variations} \\
-\\
+\textbf{Alternative success scenario} \\
+The CST determines that the issue is not a bug but rather a misunderstanding or error by the user.
+In this case, the CST provides clarification or instructions to help the user resolve their issue.
 
-\textbf{Related Information} (Optional) \\
-\textbf{Priority:} Most will likely be low priority. \\
-\textbf{Performance Target:} Days to weeks \\
+\textbf{Failure scenario(s)} \\
+The bug cannot be reproduced, and no workaround is available. \\
+The issue persists without a resolution, potentially affecting the robustness of the RSP.\\
+
+\textbf{Risks} \\
+Users may lose confidence in the RSP if bugs are not addressed promptly or if no workarounds are provided. \\
+The lack of timely fixes may lead to broader disruptions in the community's ability to use the platform effectively. \\
+Recurrent or unresolved bugs may increase the CST and RSP development teams' workload.\\
+
+\textbf{Related information (optional)} \\
+\textbf{Priority:} Most cases are likely to be low priority. \\
+\textbf{Performance Target:} Resolution within days to weeks, depending on the issue complexity. \\
 \textbf{Frequency:} Infrequent \\
-\textbf{Superordinate Use Case:} \\
-\textbf{Subordinate Use Cases:} \\
-\textbf{Channel to Primary Actor:} Interactive via Help Desk \\
-\textbf{Secondary Actors:} Rubin Science Platform developers in the Data Production Department \\
-\textbf{Channel to Secondary Actors:} Interactive, e.g., JIRA \\
 
-\textbf{Open Issues} (Optional) \\
-
-\textbf{Schedule} \\
-\textbf{Due Date:} \\
+\textbf{Preconditions for success} \\
+The RSP is operational and actively used by the community. \\
+A functional ticketing system is in place to track and manage Help Desk submissions. \\
+Communication channels between the CST and RSP development teams (e.g., JIRA, Slack) are active and effective. \\
