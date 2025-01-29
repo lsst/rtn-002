@@ -21,7 +21,7 @@
 % \setDocSubtitle{A subtitle}
 
 \author{%
-Melissa Graham, Christina Adair, Jim Annis, Jeff Carlin, Alex Drlica-Wagner, Leanne Guy, Greg Madejski, Andrés A. Plazas Malagón, Robert DePeyster
+Melissa Graham, Andrés A. Plazas Malagón, Jeff Carlin, Leanne Guy, Christina Adair, Greg Madejski
 }
 
 \setDocRef{RTN-002}
@@ -33,7 +33,7 @@ Melissa Graham, Christina Adair, Jim Annis, Jeff Carlin, Alex Drlica-Wagner, Lea
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-Draft user profiles and use cases by the Community Science Team (CST).
+User profiles and analysis and support use cases (workflows) for Rubin community science.
 }
 
 % Change history defined here.
@@ -43,6 +43,7 @@ Draft user profiles and use cases by the Community Science Team (CST).
 \setDocChangeRecord{%
   \addtohist{1}{2021-03-05}{Released.}{Melissa Graham}
   \addtohist{2}{2023-04-19}{Add user profiles.}{Andrés A. Plazas Malagón}
+  \addtohist{3}{2025-01-21}{Reorganize document (SP-1758).}{Melissa Graham, Andrés A. Plazas Malagón}
 }
 
 \begin{document}
@@ -57,87 +58,89 @@ Draft user profiles and use cases by the Community Science Team (CST).
 
 \section{Introduction}
 
-This document is a work in progress.
+The contents of this document are under development and are subject to change.
 
-The Community Science Team (CST) in the Rubin System Performance department is generating a set of user profiles and use cases
-to capture the range of anticipated needs regarding community support for Rubin software and data products.
-These user profiles and use cases are being used to guide the developement of science validation processes for
-user-facing resources such as the Rubin Science Platform, documentation, tutorials, and activities.
-They are also being used to refine the Model for Community Science \citedsp{RTN-004}.
+The Community Science Team (CST) in the Rubin System Performance department maintains this set of user profiles and use cases
+to capture the range of anticipated needs regarding scientific analyses with the Rubin software and data products.
+
+This document guides the development of a process to scientifically validate user-facing resources for scientific analysis,
+such as the Rubin Science Platform (RSP), documentation, tutorials, and activities.
+To ``scientifically validate" the RSP means to confirm that the RSP's functionality meets the scientific needs
+of its users, and that users are able to do their science with the RSP's tools.
+This document also guides the development of Rubin's Model for Community Science \citedsp{RTN-004}.
 
 \textbf{User profiles} are designed to represent the diverse user community of the RSP:
 different experience and expertise backgrounds, scientific motivations, and accessibility needs.
-Four user profiles for each of the Notebook, Portal, and API aspects of the RSP have been drafted along
-the axes of user experience and science motivation.
-Two additional user profiles have been drafted: one to represent integrated use of the Notebook and Portal aspects,
-and one to represent accessibility needs.
 
-These fourteen user profiles are subject to change.
+\textbf{Analysis use cases} are designed to represent the variety of types of analysis that
+users will do with the RSP, such as subsetting, visualization, model fitting, and reprocessing.
+These use cases help to define the limitations of the RSP as well, and identify analysis
+that requires external resources (independent data access centers; IDACs).
 
-\textbf{Use cases} for the support of scientists using the Rubin software and data products have been drafted
-in a format defined by model-based systems engineering (MBSE) practices.
-The seven use cases represent issues and support needs that involve, e.g., trouble with scientific analysis,
+\textbf{Support use cases} are designed to provide workflow examples of Rubin's issue resolution
+process, to illuminate how users report problems and get support, and how staff from across
+Rubin participate in user support.
+These use cases include, e.g., trouble with scientific analysis,
 instrumentation faults, software bugs.
 
-These seven use cases are subject to change.
+\clearpage
+\section{User Profiles}
+
+\input{user_profiles.tex}
+
 
 \clearpage
-\section{User Profiles for Science Validation of the Rubin Science Platform}
+\section{Analysis Use Cases}
+
+These analysis use cases represent general things that users want to do in the Rubin Science Platform,
+using specific scientific examples.
+They are not 1:1 related to the user profiles above, although some of the more advanced analysis
+use cases, for example, would be much more likely to be done by a heavy user.
+
+The analysis use cases progress from ``simple" to ``more complicated".
+These cases, along with those in \citeds{dmtn-086}, will serve as the basis for usability tests and the CST's process for science validation of
+the RSP.
+
+\subsection{Rubin Science Platform}
+
+\input{analysis_rsp.tex}
+
+\subsection{Independent Data Access Centers (IDACs) and other computational facilities}
+
+\input{analysis_idacs.tex}
+
+\subsection{Alert Brokers}
+
+\input{analysis_brokers.tex}
 
 \clearpage
-\subsection{Portal Aspect}
-\input{up_portal.tex}
+\section{Support Use Cases}
 
 \clearpage
-\subsection{Notebook Aspect}
-\input{up_notebook.tex}
-
-\clearpage
-\subsection{Web Application Programming Interface (API) Aspect}
-\input{up_web_api.tex}
-
-\clearpage
-\subsection{Integrated Aspects}
-\input{up_integrated_aspects.tex}
-
-\clearpage
-\subsection{Accessibility}
-\input{up_accesibility.tex}
-
-\clearpage
-\section{Use Cases}
-
-\clearpage
-\subsection{Use Cases Template}
 \input{uc000.tex}
 
 \clearpage
-\subsection{Generic Community Self-Help Using CST Resources}
 \input{uc001.tex}
 
 \clearpage
-\subsection{Generic Sequence of Events from a CST Perspective}
 \input{uc002.tex}
 
 \clearpage
-\subsection{A Camera Fault Requires Modification of the Alert Production System}
 \input{uc003.tex}
 
 \clearpage
-\subsection{Large Queries: Community Self-Help Using CST Resources}
 \input{uc004.tex}
 
 \clearpage
-\subsection{Science Platform Bug: A Help Desk Submission}
 \input{uc005.tex}
 
 \clearpage
-\subsection{Survey Strategy Alteration for Photometric Redshifts}
 \input{uc006.tex}
 
 \clearpage
-\subsection{A Science-Driven Modification to a Data Product}
 \input{uc007.tex}
+
+
 
 \appendix
 % Include all the relevant bib files.

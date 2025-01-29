@@ -1,44 +1,43 @@
-{\bf Use Case:} 006 Survey Strategy Alteration for Photometric Redshifts \\
+\subsection{S-006: Survey Strategy Alteration for Photometric Redshifts}
 
-{\bf Characteristic Information} \\
-Trigger: DESC photo-z and weak lensing working groups determine that their projected photo-z statistics fall short of the LSST SRD year 10 target values for photo-z quality, and the DESC spokesperson communicates this formally to the SP-CST lead via email. \\
-Goal in Context: As the Rubin Observatory intends to meet the science requirements of its LSST servey, staff will need to study and implementent changes to the survey strategy to aquire the right data to meet the photometric redshift statistics requirements. \\
-Primary Actor: SP-CST lead, upon receipt of email, opens an issue in an issue tracking system. \\
-Scope: We are designing the interaction of the survey performance team with the observatory operations team as a formal request for a change comes from the science community. \\
-Level: Summary \\
-Preconditions: This scenario envisions the Observator is in full operations and that data has been released to the science collaborations.  Likely this is year 4 of the survey and year 3 data is under study by the DESC.  It takes time for science collaborations to understand the limitations of the data and the likely lag from data release to formal feedback is a year. The scenario envisions that most scientists believe that the limitations of the photo-zs can be improved by changing the kind of data being acquired as opposed to changing the algorithms. \\
-Success End Condition: A year's worth of new data improves the photo-z statistics as expected, and the DESC photo-z and weak lensing working groups can project the 10 year data meeting requirements. \\
-Failed End Condition: The photo-z statistics remain stubbornly high.  The SRD photo-z requirements are not met, and the leading systematic on the weak lensing cosmology results is the photo-z statistics.  This limits the precision of the resulting cosmological parameters. \\
+\textbf{Issue origin and description} \\
+The DESC photo-z and weak lensing working groups determine that their projected photometric redshift (photo-z) statistics fall short of the LSST Science Requirements Document (SRD) year 10 target values for photo-z quality.
+The DESC spokesperson communicates this issue formally to the SP-CST lead via email.
 
-{\bf Main Success Scenario} \\
-0. The DESC determines there is an issue in the photo-zs and communicates this to the SP-CST. \\
-1. SP-CST creates an issue ticket assigned to the Community Scientist with expertise in cosmology adding relevant watchers from the SP Survey Scheduling Team (SP-SST), Data Production Algorithms and Pipeline Team (DP-AP), and Observatory Operations Observatory Science Team (OO-OS). \\
-2. A meeting is organized with DESC scientists, SP-CST, SP-SST, DP-AP, OO-OS representatives, and members of the Survey Cadence Optimization Commitee (SCOC) with the agenda of deciding what the next steps are. It is decided to perform simulations of a cadence that increases u and y band cumulative exposure times. \\
-3. The SP-SST publishes a Community post describing the issue and the actions being taken and responds to the DESC spokesperson. \\
-4. The SP-SST generates the OpSim results with standard metrics. \\ 
-5. The DESC (and other science collaborations) evaluate the simulations to determine impact on the issues with the weak lensing and photo-z as well as on all other science cases of concern and sumbits reports back to the SCOC. \\
-6. The SCOC meets (\approx 6 months) and decides to recommend a u-band focus for year 9 to the Directorate. The written summary of their discussion is provided to the SP-CST. \\
-7. The SCOC written summary is made publicly available by the SP-CST. \\
-8. The issue ticket is closed. \\
+\textbf{Success scenario(s)} \\
+A year's worth of new data improves the photo-z statistics as expected, enabling the DESC photo-z and weak lensing working groups to project that 10-year survey data will meet the SRD requirements.
 
+\textbf{Success workflow} \\
+Step 1. The DESC determines that there is an issue with the photo-zs and communicates it to the SP-CST. \\
+Step 2. SP-CST creates an issue ticket and assigns it to the Community Scientist with expertise in cosmology, adding relevant watchers from the SP Survey Scheduling Team (SP-SST), Data Production Algorithms and Pipeline Team (DP-AP), and Observatory Operations Observatory Science Team (OO-OS). \\
+Step 3. A meeting is organized with DESC scientists, SP-CST, SP-SST, DP-AP, OO-OS representatives, and members of the Survey Cadence Optimization Committee (SCOC) to decide on the next steps.
+It is decided to perform simulations of a cadence that increases cumulative exposure times in the u and y bands. \\
+Step 4. The SP-SST publishes a Community post describing the issue and the planned actions and responds to the DESC spokesperson. \\
+Step 5. The SP-SST generates OpSim results with standard metrics. \\
+Step 6. The DESC and other science collaborations evaluate the simulations to determine the impact on weak lensing and photo-z issues, as well as on other science cases, and submit reports back to the SCOC. \\
+Step 7. The SCOC meets (approximately 6 months later) and decides to recommend a u-band focus for year 9 to the Directorate.
+A written summary of their discussion is provided to the SP-CST. \\
+Step 8. The SCOC written summary is made publicly available by the SP-CST. \\
+Step 9. The issue ticket is closed. \\
 
-{\bf Extensions} \\
-\\
+\textbf{Alternative success scenario} \\
+The simulations and discussions result in a different cadence modification being proposed, which still leads to the photo-z statistics improving to meet SRD requirements.
 
-{\bf Sub-Variations} \\
-\\
+\textbf{Failure scenario(s)} \\
+The photo-z statistics remain insufficient, and the SRD photo-z requirements are not met. \\
+The photo-z statistics become the leading systematic limiting weak lensing cosmology results, restricting the precision of cosmological parameters. \\
 
-{\bf Related Information} (Optional) \\
-Priority: This issue is of high priority but is not particularly urgent. \\
-Performance Target: The time from opening to closing the ticket should be <1 year. \\
-Frequency: Issues affecting the wide field cadence are likely every couple of years. \\
-Superordinate Use Case:  \\
-Subordinate Use Cases: \\
-Channel to primary actor: interactive (email) \\
-Secondary Actors: SP-SST, DP-AP, OO-OS, SCOC \\
-Channel to Secondary Actors: interactive (JIRA) \\
+\textbf{Risks} \\
+Delays in addressing the issue could result in further data collection that does not contribute to improving photo-z statistics. \\
+Ineffective cadence modifications could negatively impact other science goals. \\
+Persistent photo-z issues could erode the community’s confidence in Rubin's ability to meet its science requirements.
 
-{\bf Open Issues} (Optional) \\
+\textbf{Related information (optional)} \\
+\textbf{Priority:} High priority but not particularly urgent. \\
+\textbf{Performance Target:} The issue should be resolved within one year of ticket creation. \\
+\textbf{Frequency:} Issues affecting wide-field cadence are likely to arise every couple of years. \\
 
-{\bf Schedule} \\
-Due Date: \\
+\textbf{Preconditions for success} \\
+The Rubin Observatory is in full operations. \\
+DESC has received sufficient data (e.g., year 3 data) to analyze and provide feedback. \\
+The SP-SST, DP-AP, and SCOC are prepared to respond to cadence-related feedback from science collaborations.\\

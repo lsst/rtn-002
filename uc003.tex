@@ -1,41 +1,40 @@
-{\bf Use Case:} 003 Observatory Personnel Detect a Fault, Leads to Change in Alert Production Pipeline \\
+\subsection{S-003: A Camera Fault Rquires Modification of the Alert Production Pipeline}
 
-{\bf Characteristic Information} \\
-Trigger: A fault in one of the Raft Electronics Boards (a sensor). \\
-Goal in Context: This fault causes and abnormally high number of DIASource detections for that sensor, most of which are appropriately flagged as artifacts by the real/bogus algorithm and do not become Alerts, but some are not flagged and are released. \\
-Primary Actor: The System Performance Verification and Validation (SP-VV) Lead Scientist \\
-Scope: alert production, broker community \\
-Level: \\
-Preconditions: Operations \\
-Success End Condition: The sensor anomaly is solved by modifying the Alert Production (AP) pipeline. \\
-Failed End Condition: Bogus DIASources from this sensor fault continue to be released as Alerts. \\
+\textbf {Issue origin and description} \\
+A fault in one of the Raft Electronics Boards (in a sensor) causes an abnormally high number of DIASource detections for that sensor.
+Most of these detections are flagged as artifacts by the real/bogus algorithm and do not become Alerts, but some are not flagged and are released. \\
 
-{\bf Main Success Scenario} \\
-Step 1: Rubin Observatory Operations team monitors verification and validation outputs during the night. \\
-Step 2: Night staff notice an anomalous spike in the number of DIASources detected. \\
-Step 3: Night staff run diagnostics to isolate the excess DIASources to a single sensor, identify the underlying fault, and determine that the hardware cannot be quickly/easily fixed (i.e., sensor will have to be replaced). \\
-Step 4: Night staff summarize their findings for the SP-VV Lead Scientist. \\
-Step 5: SP-VV team runs further diagnostics and coordinates with Data Production (DP) to plan a fix. \\
-Step 6: DP implements the fix (e.g., retraining the real/bogus characterization). \\
-Step 7: SP-VV and DP coordinate with the CST to summarize the issue, it's fix, and potential science impacts for the community. \\
+\textbf {Success scenario(s)} \\
+The sensor anomaly is resolved by modifying the Alert Production (AP) pipeline, ensuring that bogus DIASources are no longer released as Alerts. \\
 
-{\bf Extensions} \\
-Alteration 5.1: IF a significant amount of the anomalous DIASources were released as Alerts THEN SP-VV team coordinates with the CST to prepare an initial statement describing the fault and it's impact on the Alert stream, to be posted to the Community Forum and sent to a community brokers email list. \\
+\textbf {Success workflow} \\
+Step 1. Rubin Observatory Operations team monitors verification and validation outputs during the night.\\
+Step 2. Night staff notice an anomalous spike in the number of DIASources detected.\\
+Step 3. Night staff run diagnostics to isolate the excess DIASources to a single sensor, identify the underlying fault, and determine that the hardware cannot be quickly or easily fixed (i.e., the sensor will need to be replaced).\\
+Step 4. Night staff summarize their findings for the SP-VV Lead Scientist.\\
+Step 5. The SP-VV team runs further diagnostics and coordinates with Data Production (DP) to plan a fix.\\
+Step 6. DP implements the fix (e.g., retraining the real/bogus characterization).\\
+Step 7. SP-VV and DP coordinate with the CST to summarize the issue, the fix, and potential science impacts for the community.\\
 
-{\bf Sub-Variations} \\
-Variation 3.1: IF the sensor anomaly is fixed with hardware THEN a software fix might not be necessary \\
+\textbf {Alternative success scenarios} \\
+The sensor anomaly is fixed with hardware such that a software fix might not be necessary.\\
+If a significant number of the anomalous DIASources were released as Alerts, the SP-VV team coordinates with the CST to prepare a public statement describing the fault and its impact on the Alert stream.
+This statement is posted to the Community Forum and sent to a community brokers email list.\\
 
-{\bf Related Information} (Optional) \\
-Priority: High  \\
-Performance Target: identify scope of issue within one day; apply fix to AP within a week \\
+\textbf {Failure scenario(s)} \\
+Bogus DIASources from the faulty sensor continue to be released as Alerts, undermining the reliability of the alert stream.\\
+
+\textbf {Risks}\\
+If the fault is not addressed, the continued release of bogus DIASources may erode trust in the alert system.\\
+Additional workload for the CST and DP teams to mitigate the downstream effects of the faulty alerts.\\
+Science users may waste time and resources investigating bogus alerts.\\
+
+\textbf {Related information (optional)} \\
+Priority: High \\
+Timeframe: Identify the scope of the issue within one day; apply a fix to the AP within a week. \\
 Frequency: Low \\
-Superordinate Use Case:  \\
-Subordinate Use Cases: \\
-Channel to primary actor: Internal discussions via Slack channels \\
-Secondary Actors: CST, DP, science users \\
-Channel to Secondary Actors: posts to the science users via the Community Forum \\
 
-{\bf Open Issues} (Optional) \\
-
-{\bf Schedule} \\
-Due Date: \\
+\textbf {Preconditions for success}\\
+The Rubin Observatory is in operations. \\
+Verification and validation outputs are actively monitored by the Operations team. \\
+Communication channels (e.g., Slack, Community Forum) are established between SP-VV, CST, and DP teams. \\

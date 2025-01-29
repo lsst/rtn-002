@@ -1,0 +1,57 @@
+
+\subsubsection{Portal}
+
+\textbf{P-101}: User interface cone search on the object catalog, review the results overplotted on the Hierarchical Progressive Survey (HiPS) map.
+
+\textbf{P-102}: Astronomical Data Query Language (ADQL) search with column constraints, followed by the creation of plots based on the retrieved data in the results view.
+
+\textbf{P-103}: Data discoverability via e.g., schema and HiPS browsing. 
+
+\textbf{P-201}: Extraction of image cutouts from LSST image archives based on user-defined coordinates, spatial dimensions, and filters.
+
+\textbf{P-202}:  View, rerun, and refine previous ADQL queries. Save, organize, and share queries for reproducibility and collaboration.
+
+\textbf{P-203}: Upload user-defined tables.
+
+\textbf{P-301}: Identification of LSST images that spatially and/or temporally overlap user-defined coordinates and timeframes. Enable visualization and interaction with these images, including zooming, panning, rescaling, performing pixel statistics, and adding markup. Generate and save publication-quality plots and images for analysis and presentation.
+
+\subsubsection{Notebook}
+
+\textbf{N-100}: Explore and analyze images by loading a specific observation using the LSST data butler. Use basic visualization tools, such as color mapping and zoom functions, to examine image details. Identify and measure properties of individual sources (e.g., stars or galaxies) within the image to enable further analysis or classification.
+
+\textbf{N101}: Develop and utilize custom algorithms to detect and characterize specific astronomical objects, such as supernovae or quasars.
+
+\textbf{N-102}: Reprocess data using the LSST Science Pipelines with modified configuration parameters to suit specific research needs.
+
+\textbf{N-103}: Utilize advanced plotting libraries like Matplotlib and Bokeh to create publication-quality figures.
+
+\textbf{N-201}: Query the LSST databases (e.g., Prompt Products Database) to generate cutout images (on the order of tens of thousands) for target candidates of specific astronomical objects of interest (e.g., lensed AGNs).
+
+\textbf{N-202}: Implement and apply algorithms to detect and characterize transient or variable phenomena, integrating external packages for computational support when needed (e.g., to identify microlensing events).
+
+\textbf{N-203}: Identify and analyze patterns of data quality degradation or observational interference, such as satellite streaks, and develop models to assess their impact on science (e.g., on Solar System science) and optimize observational strategies.
+
+\textbf{N-301}: Fit light curves for selected objects by applying an initial pre-selection function to filter candidates based on user-defined criteria, such as object features or custom metrics.
+Pass the light curves of the selected objects to a fitting function to obtain best-fit parameters for each object for e.g.,  detailed modeling of variable or transient events. 
+
+\textbf{N-302}: Run and compare different object-finding algorithms (e.g., galaxy clusters), assessing their performance using custom-defined metrics. Utilize batch processing resources for computationally intensive tasks.
+
+\subsubsection{API}
+
+\textbf{A-101}: Explore LSST catalogs and metadata using basic API queries, and cross-match catalogs from LSST and other surveys.
+
+\textbf{A-102}: Run ADQL queries on the LSST datasets to explore tables and produce visualizations via an interactive graphical users interface (GUI).
+
+\textbf{A-201}: Verify the consistency of observables across multiple datasets and perform statistical checks (for example, for multiple dark energy probes). 
+
+\textbf{A-202}: Extract photometric data for sources and apply different algorithms for deblending, variability estimation, and source property analysis (e.g., for AGN variability). 
+
+\textbf{A-301}: Query galaxy shapes, positions, and photo-z catalogs to measure two-point correlation functions with external packages (\emph{e.g.}, Treecorr).
+Use the results for modeling and parameter sampling with access to batch resources.
+
+\textbf{A-302}: Cross-match LSST coadd data from multiple data releases with ancillary datasets, potentially incorporating single-alert matches via broker streams.
+Publish all cross-match results as User Generated Data Products (UGDPs) for broad community use, including applications in Solar System science, cosmology, transients, and more.
+
+\subsubsection{Multi-aspect}
+
+\textbf{M-201}: Create exploratory plots and diagrams in the Portal to identify trends or interesting subsets, then use the Notebook Aspect for computationally intensive analyses and catalog queries.
